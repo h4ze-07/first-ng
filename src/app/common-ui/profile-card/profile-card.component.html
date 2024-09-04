@@ -1,7 +1,7 @@
 @if (card) {
     <div class="card">
         <span>{{card.id}}</span>
-        <h4>{{card.name}}</h4>
+        <h4>{{card.name | capitalizeString}}</h4>
     </div>
 } @else {
     <p>No data!</p>
