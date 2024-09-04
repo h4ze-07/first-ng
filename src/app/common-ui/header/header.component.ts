@@ -9,4 +9,26 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+    menuLinks = [
+        {
+            id: 1,
+            name: 'Home',
+            link: '/',
+        },
+        {
+            id: 2,
+            name: 'About',
+            link: '/about',
+        },
+        {
+            id: 3,
+            name: 'Services',
+            link: '/services',
+        },
+        {
+            id: 4,
+            name: 'News',
+            link: '/news',
+        },
+    ]
 }

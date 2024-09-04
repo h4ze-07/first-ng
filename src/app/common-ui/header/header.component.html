@@ -5,10 +5,9 @@
             <a href="/" class="logo"></a>
 
             <ul class="header__menu">
-                <li>Home</li>
-                <li>About</li>
-                <li>News</li>
-                <li>Services</li>
+                @for (item of menuLinks; track item.id) {
+                    <li><a href="{{item.link}}">{{item.name}}</a></li>
+                }
             </ul>
         </div>
     </div>
