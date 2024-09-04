@@ -1,9 +1,17 @@
 <app-header></app-header>
 
 <main class="main">
-    <ul class="user-list">
-        <li *ngFor="let user of usersData?.users" class="user-list__item">
-          <span>{{user.firstName}}</span> - <span>{{user.email}}</span>
-        </li>
-      </ul>
+  <ul class="user-list">
+    <li *ngFor="let user of usersData?.users" class="user-list__item">
+      <span>{{ user.firstName }}</span> - <span>{{ user.email }}</span>
+    </li>
+  </ul>
+
+  <section class="cards">
+    @for (user of randomData; track user.id) {
+        <app-profile-card
+            [card] = 'user'
+        ></app-profile-card>
+    }
+  </section>
 </main>
