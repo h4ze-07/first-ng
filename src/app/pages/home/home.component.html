@@ -1,1 +1,9 @@
-Home page
+
+<div>
+    <h2>Home page</h2>
+
+    <div class="signals">
+        <input [type]="isPassVisible() ? 'text' : 'password'" placeholder="Password">
+        <button (click)="isPassVisible.set(!isPassVisible())">Show pass</button>
+    </div>
+</div>

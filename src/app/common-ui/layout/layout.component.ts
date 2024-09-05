@@ -12,4 +12,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class LayoutComponent {
 
+    ngOnInit(): void {
+        console.log('component mounted');
+
+    }
+
+
+    ngOnDestroy() {
+        console.log('component unmounted');
+    }
 }
