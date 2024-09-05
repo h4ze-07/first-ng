@@ -27,8 +27,8 @@ export class HeaderComponent {
         },
         {
             id: 4,
-            name: 'News',
-            link: '/news',
+            name: 'Contact',
+            link: '/contact',
         },
     ]
 }

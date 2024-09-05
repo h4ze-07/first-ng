@@ -1,0 +1,36 @@
+<section class="contact-wrapper">
+  <form class="contact-form" [formGroup]="form" (ngSubmit)="submitFunc()">
+    <div class="blur"></div>
+
+    <div class="inputs">
+      <div class="input-group">
+        <label for="login">Login</label>
+        <input
+          type="text"
+          id="login"
+          name="login"
+          class="contact-input"
+          placeholder=" "
+          formControlName="login"
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="pass">Pass</label>
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          class="contact-input"
+          placeholder=" "
+          formControlName="pass"
+        />
+      </div>
+
+      <button type="submit" class="form-btn">
+        <span>Submit</span>
+        <div class="form-btn__bg"></div>
+      </button>
+    </div>
+  </form>
+</section>
